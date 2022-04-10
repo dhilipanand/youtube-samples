@@ -47,7 +47,7 @@ jobs:
       run: aws s3 cp ./artifact/lambda.zip s3://youtube-demo-cloudformation-packages1
       
   test-deploy:
-      runs-on: ubuntu-lates
+      runs-on: ubuntu-latest
       environment: Test
       needs: build
       
