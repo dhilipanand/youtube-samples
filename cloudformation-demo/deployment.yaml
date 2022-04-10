@@ -28,7 +28,7 @@ Resources:
                     - logs:CreateLogGroup
                     - logs:CreateLogStream
                     - logs:PutLogEvents
-                  Resources:  "*"    
+                  Resources:  !GetAtt lambdaFunction.Arn      
 
   lambdaFunction:
     Type: AWS::Lambda::Function
