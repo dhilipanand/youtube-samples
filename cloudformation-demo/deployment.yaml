@@ -25,9 +25,9 @@ Resources:
               Statement:
                 - Effect: "Allow"
                   Action:
-                    - "logs:CreateLogGroup"
-                    - "logs:CreateLogStream"
-                    - "logs:PutLogEvents"
+                    - logs:CreateLogGroup
+                    - logs:CreateLogStream
+                    - logs:PutLogEvents
                   Resources:  "*"    
 
   lambdaFunction:
