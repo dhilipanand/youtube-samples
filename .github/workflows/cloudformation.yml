@@ -69,4 +69,4 @@ jobs:
         with:
           name: youtube-cloudformation-demo
           template: artifact/deployment.yaml
-          parameter-overrides: "Environment=-Test"
+          parameter-overrides: "Environment=Test"
